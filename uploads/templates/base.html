@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        @media (min-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+}
+.container{
+    margin-top:20px;
+    background-color:white;
+    padding: 10px;
+    max-width: 90.9em;
+    height: 50.9em;
+}
+
+h2{
+
+  color: #567;
+
+}
+.row{
+    margin-top: 70px;
+    margin-right: 150px;
+}
+.image-preview-input {
+    position: relative;
+	overflow: hidden;
+	margin: 0px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+
+}
+.image-preview-input input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.image-preview-input-title {
+    margin-left:2px;
+    color:#3d8b47
+}
+.button {
+    background:#3d8b47;color: #333;font-size: 1.5em;font-family: ‘Georgia’, serif;
+    font-style: italic;border-radius: 50px;padding: 8px 16px;transition: all 0.2s;
+    border: none;color: white;text-align: center;text-decoration: none;width:180px;
+    height:38px;font-size:18px;
+ }
+
+
+    </style>
+
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</head>
+  <body>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>
